@@ -1,1 +1,1 @@
-"It is just practice of Django and github"
+"It is just practice of Django and GitHub"
