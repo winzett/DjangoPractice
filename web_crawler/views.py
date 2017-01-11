@@ -16,7 +16,7 @@ def crawling(request):
 
   html_result = driver.page_source
   soup = BeautifulSoup(html_result, "html.parser")
-  typing=soup.find_all("div",{"class":"centre"})
-
+  #typing = soup.find_all("container",{"class":"add10marginbottom"})
+  typing = soup.find_all('h3');
 
   return render(request, 'web_crawler/crawling_result.html', {'result':typing})
